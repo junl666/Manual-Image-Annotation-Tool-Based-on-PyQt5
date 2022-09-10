@@ -52,7 +52,8 @@ class Window(QMainWindow, UiMain):
         self.slot()
 
     def openFile(self):
-        """打开一张图片
+        """
+        打开一张图片
 
         """
         path = osp.dirname(str(self.filename)) if self.filename else "."
