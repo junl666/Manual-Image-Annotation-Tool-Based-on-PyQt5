@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="新前缀">
+    <file>brightness.png</file>
+  </qresource>
+</RCC>

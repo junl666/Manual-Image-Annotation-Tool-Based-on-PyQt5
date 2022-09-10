@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+
+<html lang="EN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>app module &#8212; labelall 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinxdoc.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">labelall 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">app module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-app">
+<span id="app-module"></span><h1>app module<a class="headerlink" href="#module-app" title="Permalink to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="app.Window">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.</span></span><span class="sig-name descname"><span class="pre">Window</span></span><a class="headerlink" href="#app.Window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QMainWindow</span></code>, <a class="reference internal" href="main_ui.html#main_ui.UiMain" title="main_ui.UiMain"><code class="xref py py-class docutils literal notranslate"><span class="pre">UiMain</span></code></a></p>
+<p>窗口类，对main_ui进行补充，也是连接不同控件的“桥梁”</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.Window.action_label_list">
+<span class="sig-name descname"><span class="pre">action_label_list</span></span><a class="headerlink" href="#app.Window.action_label_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>存放四种标注图形的列表</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.Window.file_num_old">
+<span class="sig-name descname"><span class="pre">file_num_old</span></span><a class="headerlink" href="#app.Window.file_num_old" title="Permalink to this definition">¶</a></dt>
+<dd><p>记入滑动slider时的上一时刻UI上显示的图片在文件夹中的对应数字</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.Window.filename">
+<span class="sig-name descname"><span class="pre">filename</span></span><a class="headerlink" href="#app.Window.filename" title="Permalink to this definition">¶</a></dt>
+<dd><p>当前图片的绝对路径</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.Window.have_json">
+<span class="sig-name descname"><span class="pre">have_json</span></span><a class="headerlink" href="#app.Window.have_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>当前图片是否有同名json的判断</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.Window.image">
+<span class="sig-name descname"><span class="pre">image</span></span><a class="headerlink" href="#app.Window.image" title="Permalink to this definition">¶</a></dt>
+<dd><p>当前载入的图片的QImage格式</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QImage</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.Window.imageData">
+<span class="sig-name descname"><span class="pre">imageData</span></span><a class="headerlink" href="#app.Window.imageData" title="Permalink to this definition">¶</a></dt>
+<dd><p>前载入的图片的编码格式</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bytes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.Window.imagePath">
+<span class="sig-name descname"><span class="pre">imagePath</span></span><a class="headerlink" href="#app.Window.imagePath" title="Permalink to this definition">¶</a></dt>
+<dd><p>当前图片的绝对路径或者同名json的绝对路径</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.Window.item">
+<span class="sig-name descname"><span class="pre">item</span></span><a class="headerlink" href="#app.Window.item" title="Permalink to this definition">¶</a></dt>
+<dd><p>当前图片转化成的QGraphicsPixmapItem对象</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QGraphicsPixmapItem</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.Window.labelFile">
+<span class="sig-name descname"><span class="pre">labelFile</span></span><a class="headerlink" href="#app.Window.labelFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>储存json文件的信息的容器</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="label_file.html#label_file.LabelFile" title="label_file.LabelFile">LabelFile</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.Window.pic_type">
+<span class="sig-name descname"><span class="pre">pic_type</span></span><a class="headerlink" href="#app.Window.pic_type" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.Window.pix">
+<span class="sig-name descname"><span class="pre">pix</span></span><a class="headerlink" href="#app.Window.pix" title="Permalink to this definition">¶</a></dt>
+<dd><p>当前图片转化成的QPixmap对象</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPixmap</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="app.Window.view_scale">
+<span class="sig-name descname"><span class="pre">view_scale</span></span><a class="headerlink" href="#app.Window.view_scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>控制当前GraphicView的缩放比例</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.actionEditTriggered">
+<span class="sig-name descname"><span class="pre">actionEditTriggered</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.actionEditTriggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>完成与edit相关功能/按钮等的设置与激活/关闭</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.actionLineTriggered">
+<span class="sig-name descname"><span class="pre">actionLineTriggered</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.actionLineTriggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>完成线段标注相关功能/按钮等的设置与激活/关闭</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.actionPointTriggered">
+<span class="sig-name descname"><span class="pre">actionPointTriggered</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.actionPointTriggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>完成点标注相关功能/按钮等的设置与激活/关闭</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.actionPolyTriggered">
+<span class="sig-name descname"><span class="pre">actionPolyTriggered</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.actionPolyTriggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>完成多边形标注相关功能/按钮等的设置与激活/关闭</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.actionRectTriggered">
+<span class="sig-name descname"><span class="pre">actionRectTriggered</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.actionRectTriggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>完成矩形标注相关功能/按钮等的设置与激活/关闭</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.addLabelInfo">
+<span class="sig-name descname"><span class="pre">addLabelInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.addLabelInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取label_info里的信息，并把这些信息写入到scene中的nodes_info</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>label_info</strong><strong>(</strong><strong>)</strong> – 现在打开的json文件中的label信息</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.addLineInfo">
+<span class="sig-name descname"><span class="pre">addLineInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shape</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.addLineInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>得到shape里的信息，完成多边形从json中到app中的显示</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>shape</strong> (<em>dict</em>) – 存储某一个图形所有信息的字典</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>储存线段两端点对象的list</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.addNodeToScene">
+<span class="sig-name descname"><span class="pre">addNodeToScene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shape_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_pos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.addNodeToScene" title="Permalink to this definition">¶</a></dt>
+<dd><p>在该位置创建一个点对象并返回该点对象</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>shape_type</strong> (<em>str</em>) – 形状（如 polygon  line …）</p></li>
+<li><p><strong>node_pos</strong> (<em>list</em>) – 该点坐标的list[x, y]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>GraphicItem：在此函数中创建的点对象</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.addPointInfo">
+<span class="sig-name descname"><span class="pre">addPointInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shape</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.addPointInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>得到shape里的信息，完成多边形从json中到app中的显示</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>shape</strong> (<em>dict</em>) – 存储某一个图形所有信息的字典</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>储存多该点对象的list</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.addPolyInfo">
+<span class="sig-name descname"><span class="pre">addPolyInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shape</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.addPolyInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>得到shape里的信息，完成多边形从json中到app中的显示</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>shape</strong> (<em>dict</em>) – 存储某一个图形所有信息的字典</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>储存多边形所有点对象的list</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.addRectInfo">
+<span class="sig-name descname"><span class="pre">addRectInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shape</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.addRectInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>得到shape里的信息，完成多边形从json中到app中的显示</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>shape</strong> (<em>dict</em>) – 存储某一个图形所有信息的字典</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>储存矩形所有点对象的list</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.canEdit">
+<span class="sig-name descname"><span class="pre">canEdit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.canEdit" title="Permalink to this definition">¶</a></dt>
+<dd><p>激活edit功能</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.cannotEdit">
+<span class="sig-name descname"><span class="pre">cannotEdit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.cannotEdit" title="Permalink to this definition">¶</a></dt>
+<dd><p>关闭edit功能</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.changeBrightnessAndContrast">
+<span class="sig-name descname"><span class="pre">changeBrightnessAndContrast</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.changeBrightnessAndContrast" title="Permalink to this definition">¶</a></dt>
+<dd><p>完成对图片亮度与对比度的调节</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.changeFile">
+<span class="sig-name descname"><span class="pre">changeFile</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.changeFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>文件栏改变选择后，重新加载图片</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.clearAll">
+<span class="sig-name descname"><span class="pre">clearAll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.clearAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>若要打开新的图片，则清除现存的所有信息</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.clock_rotate">
+<span class="sig-name descname"><span class="pre">clock_rotate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.clock_rotate" title="Permalink to this definition">¶</a></dt>
+<dd><p>顺时针旋转90°</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.closeEvent">
+<span class="sig-name descname"><span class="pre">closeEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.closeEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>关闭主程序的警告</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QEvent</em>) – “点击关闭”这一事件</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.counter_rotate">
+<span class="sig-name descname"><span class="pre">counter_rotate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.counter_rotate" title="Permalink to this definition">¶</a></dt>
+<dd><p>逆时针旋转90°</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.deleteLabel">
+<span class="sig-name descname"><span class="pre">deleteLabel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.deleteLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>确认删除后把相关联的checkbox删除</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.deleteLabelInTableWidget">
+<span class="sig-name descname"><span class="pre">deleteLabelInTableWidget</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.deleteLabelInTableWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>根据右键菜单发出的”删除“信号，对UI上的对应图形进行删除</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.encode_base64">
+<span class="sig-name descname"><span class="pre">encode_base64</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.encode_base64" title="Permalink to this definition">¶</a></dt>
+<dd><p>把图片信息进行编码</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file</strong> (<em>str</em>) – 图片的绝对路径</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.file_suffix">
+<span class="sig-name descname"><span class="pre">file_suffix</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.file_suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.getAndShowLabel">
+<span class="sig-name descname"><span class="pre">getAndShowLabel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.getAndShowLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>连接 “获取label弹窗” 与 “添加checkbox至右边栏”</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.loadFile">
+<span class="sig-name descname"><span class="pre">loadFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.loadFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>载入一张图片，同时自适应大小，并初始化相关按钮与参数</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – 图片的绝对路径</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.openDir">
+<span class="sig-name descname"><span class="pre">openDir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.openDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开一个图片文件夹</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.openFile">
+<span class="sig-name descname"><span class="pre">openFile</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.openFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>打开一张图片</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.renameLabelInDict">
+<span class="sig-name descname"><span class="pre">renameLabelInDict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.renameLabelInDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>重命名后对相应字典中的信息进行修改</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.saveJson">
+<span class="sig-name descname"><span class="pre">saveJson</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.saveJson" title="Permalink to this definition">¶</a></dt>
+<dd><p>保存json文件</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.saveJsonAs">
+<span class="sig-name descname"><span class="pre">saveJsonAs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.saveJsonAs" title="Permalink to this definition">¶</a></dt>
+<dd><p>json的另存为</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.setArrowCursor">
+<span class="sig-name descname"><span class="pre">setArrowCursor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.setArrowCursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>把光标设置为“箭头形”</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.setCrossCursor">
+<span class="sig-name descname"><span class="pre">setCrossCursor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.setCrossCursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>把光标设置为“十字形”</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.setHandCursor">
+<span class="sig-name descname"><span class="pre">setHandCursor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.setHandCursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>把光标设置为“手形”</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.setInitEnable">
+<span class="sig-name descname"><span class="pre">setInitEnable</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.setInitEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>将一些按钮初始化为禁用状态</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.sliderChangeFile">
+<span class="sig-name descname"><span class="pre">sliderChangeFile</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.sliderChangeFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>通过下方滑动条移动的位置（对应的数值），进行对相应图片的加载</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.slot">
+<span class="sig-name descname"><span class="pre">slot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.slot" title="Permalink to this definition">¶</a></dt>
+<dd><p>所有的槽函数</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="app.Window.viewScale">
+<span class="sig-name descname"><span class="pre">viewScale</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.Window.viewScale" title="Permalink to this definition">¶</a></dt>
+<dd><p>实现图片自适应窗口功能</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>缩放的一个比值</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/app.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">labelall 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">app module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, jun.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
+    </div>
+  </body>
+</html>

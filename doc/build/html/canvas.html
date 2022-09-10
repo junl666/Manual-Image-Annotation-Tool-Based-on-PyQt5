@@ -1,0 +1,1246 @@
+
+<!DOCTYPE html>
+
+<html lang="EN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>canvas package &#8212; labelall 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinxdoc.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">labelall 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">canvas package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="canvas-package">
+<h1>canvas package<a class="headerlink" href="#canvas-package" title="Permalink to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-canvas.items">
+<span id="canvas-items-module"></span><h2>canvas.items module<a class="headerlink" href="#module-canvas.items" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="canvas.items.Edge">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">canvas.items.</span></span><span class="sig-name descname"><span class="pre">Edge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.Edge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QGraphicsPathItem</span></code></p>
+<p>此类用于创建多边形的边或线段，即“线”对象</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.Edge.start_item">
+<span class="sig-name descname"><span class="pre">start_item</span></span><a class="headerlink" href="#canvas.items.Edge.start_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>一条边或线段的起始顶点图元</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QGraphicsItem</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.Edge.end_item">
+<span class="sig-name descname"><span class="pre">end_item</span></span><a class="headerlink" href="#canvas.items.Edge.end_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>一条边或线段的结束顶点图元</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QGraphicsItem</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.Edge.pos_src">
+<span class="sig-name descname"><span class="pre">pos_src</span></span><a class="headerlink" href="#canvas.items.Edge.pos_src" title="Permalink to this definition">¶</a></dt>
+<dd><p>线条起始位置 x, y坐标</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.Edge.pos_dst">
+<span class="sig-name descname"><span class="pre">pos_dst</span></span><a class="headerlink" href="#canvas.items.Edge.pos_dst" title="Permalink to this definition">¶</a></dt>
+<dd><p>线条结束位置 x, y坐标</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.Edge.pen">
+<span class="sig-name descname"><span class="pre">pen</span></span><a class="headerlink" href="#canvas.items.Edge.pen" title="Permalink to this definition">¶</a></dt>
+<dd><p>画线条的画笔</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPen</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.Edge.pen_dragging">
+<span class="sig-name descname"><span class="pre">pen_dragging</span></span><a class="headerlink" href="#canvas.items.Edge.pen_dragging" title="Permalink to this definition">¶</a></dt>
+<dd><p>画拖拽线条（虚线）的画笔</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPen</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.Edge.calcPath">
+<span class="sig-name descname"><span class="pre">calcPath</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.Edge.calcPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>计算线条路径</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPainterPath：计算出的线条路径</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.Edge.paint">
+<span class="sig-name descname"><span class="pre">paint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">painter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">graphics_item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">widget</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.Edge.paint" title="Permalink to this definition">¶</a></dt>
+<dd><p>绘制图形</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>painter</strong> (<em>QPen</em>) – 画笔</p></li>
+<li><p><strong>graphics_item</strong> – </p></li>
+<li><p><strong>widget</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+<p>Returns:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.Edge.set_dst">
+<span class="sig-name descname"><span class="pre">set_dst</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.Edge.set_dst" title="Permalink to this definition">¶</a></dt>
+<dd><p>更新要画的边的终点位置坐标</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – 终点位置的横坐标</p></li>
+<li><p><strong>y</strong> (<em>int</em>) – 终点位置的纵坐标</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.Edge.set_src">
+<span class="sig-name descname"><span class="pre">set_src</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.Edge.set_src" title="Permalink to this definition">¶</a></dt>
+<dd><p>更新要画的边的起点位置坐标</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – 起点位置的横坐标</p></li>
+<li><p><strong>y</strong> (<em>int</em>) – 起点位置的纵坐标</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.Edge.shape">
+<span class="sig-name descname"><span class="pre">shape</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.Edge.shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>返回计算出的线条路径画出的图形对象</p>
+<dl class="simple">
+<dt>Returns：</dt><dd><p>QPainterPath：计算出的线条路径</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.Edge.updatePositions">
+<span class="sig-name descname"><span class="pre">updatePositions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.Edge.updatePositions" title="Permalink to this definition">¶</a></dt>
+<dd><p>更新线条位置</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="canvas.items.GraphicItem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">canvas.items.</span></span><span class="sig-name descname"><span class="pre">GraphicItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.GraphicItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QGraphicsPixmapItem</span></code></p>
+<p>此类用于创建”点“对象</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.GraphicItem.pix">
+<span class="sig-name descname"><span class="pre">pix</span></span><a class="headerlink" href="#canvas.items.GraphicItem.pix" title="Permalink to this definition">¶</a></dt>
+<dd><p>绘出顶点图元</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPixmap</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.GraphicItem.width">
+<span class="sig-name descname"><span class="pre">width</span></span><a class="headerlink" href="#canvas.items.GraphicItem.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>图元宽度</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.GraphicItem.height">
+<span class="sig-name descname"><span class="pre">height</span></span><a class="headerlink" href="#canvas.items.GraphicItem.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>图元高度</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">scene</span> <span class="pre">=</span> <span class="pre">None</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.GraphicItem.shape_type">
+<span class="sig-name descname"><span class="pre">shape_type</span></span><a class="headerlink" href="#canvas.items.GraphicItem.shape_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>表示该顶点所在图形形状</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.GraphicItem.node_s_edges">
+<span class="sig-name descname"><span class="pre">node_s_edges</span></span><a class="headerlink" href="#canvas.items.GraphicItem.node_s_edges" title="Permalink to this definition">¶</a></dt>
+<dd><p>储存该顶点所连的线</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.GraphicItem.itemChange">
+<span class="sig-name descname"><span class="pre">itemChange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">change</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.GraphicItem.itemChange" title="Permalink to this definition">¶</a></dt>
+<dd><p>判断图元位置是否改变</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>change</strong> (<em>bool</em>) – 位置是否变化</p></li>
+<li><p><strong>value</strong> (<em>QPoint</em>) – 新位置的点对象</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>新位置的点对象
+bool： 位置是否变化</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPoint</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.GraphicItem.mouseMoveEvent">
+<span class="sig-name descname"><span class="pre">mouseMoveEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.GraphicItem.mouseMoveEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>图元被拖拽时更新线条</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QEvent</em>) – 鼠标移动事件（同时鼠标有按键被按下）</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="canvas.items.GraphicPolygonItem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">canvas.items.</span></span><span class="sig-name descname"><span class="pre">GraphicPolygonItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">_GraphicPolygonItem__args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.GraphicPolygonItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QGraphicsPolygonItem</span></code></p>
+<p>此类用于填充多边形</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.GraphicPolygonItem.calcPath">
+<span class="sig-name descname"><span class="pre">calcPath</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.GraphicPolygonItem.calcPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>计算多边形路径并绘制</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.GraphicPolygonItem.paint">
+<span class="sig-name descname"><span class="pre">paint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">painter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">graphics_item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">widget</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.GraphicPolygonItem.paint" title="Permalink to this definition">¶</a></dt>
+<dd><p>填充多边形内部</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="canvas.items.RectEdge">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">canvas.items.</span></span><span class="sig-name descname"><span class="pre">RectEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_draw</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.RectEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QGraphicsPathItem</span></code></p>
+<p>此类用于绘制矩形（不含顶点）</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.RectEdge.pos_src">
+<span class="sig-name descname"><span class="pre">pos_src</span></span><a class="headerlink" href="#canvas.items.RectEdge.pos_src" title="Permalink to this definition">¶</a></dt>
+<dd><p>线条起始位置 x, y坐标</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.RectEdge.pos_dst">
+<span class="sig-name descname"><span class="pre">pos_dst</span></span><a class="headerlink" href="#canvas.items.RectEdge.pos_dst" title="Permalink to this definition">¶</a></dt>
+<dd><p>线条结束位置 x, y坐标</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.RectEdge.start_item">
+<span class="sig-name descname"><span class="pre">start_item</span></span><a class="headerlink" href="#canvas.items.RectEdge.start_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>一条边或线段的起始顶点图元</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QGraphicsItem</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.RectEdge.end_item">
+<span class="sig-name descname"><span class="pre">end_item</span></span><a class="headerlink" href="#canvas.items.RectEdge.end_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>一条边或线段的结束顶点图元</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QGraphicsItem</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.RectEdge.patch">
+<span class="sig-name descname"><span class="pre">patch</span></span><a class="headerlink" href="#canvas.items.RectEdge.patch" title="Permalink to this definition">¶</a></dt>
+<dd><p>图元定位偏差调整</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.RectEdge.num_draw">
+<span class="sig-name descname"><span class="pre">num_draw</span></span><a class="headerlink" href="#canvas.items.RectEdge.num_draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>矩形边的序号</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.items.RectEdge.width">
+<span class="sig-name descname"><span class="pre">width</span></span><a class="headerlink" href="#canvas.items.RectEdge.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>线条宽度</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.RectEdge.calcPath">
+<span class="sig-name descname"><span class="pre">calcPath</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.RectEdge.calcPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>计算线条路径</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>计算出的线条路径对象</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>QPainterPath</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.RectEdge.paint">
+<span class="sig-name descname"><span class="pre">paint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">painter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">graphics_item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">widget</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.RectEdge.paint" title="Permalink to this definition">¶</a></dt>
+<dd><p>绘制图形</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>painter</strong> (<em>QPen</em>) – 画笔</p></li>
+<li><p><strong>graphics_item</strong><strong>(</strong><strong>)</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.RectEdge.set_dst">
+<span class="sig-name descname"><span class="pre">set_dst</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.RectEdge.set_dst" title="Permalink to this definition">¶</a></dt>
+<dd><p>更新要画的边的终点位置坐标</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – 终点位置的横坐标</p></li>
+<li><p><strong>y</strong> (<em>int</em>) – 终点位置的纵坐标</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.RectEdge.set_src">
+<span class="sig-name descname"><span class="pre">set_src</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.RectEdge.set_src" title="Permalink to this definition">¶</a></dt>
+<dd><p>更新要画的边的起点位置坐标</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – 起点位置的横坐标</p></li>
+<li><p><strong>y</strong> (<em>int</em>) – 起点位置的纵坐标</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.RectEdge.shape">
+<span class="sig-name descname"><span class="pre">shape</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.RectEdge.shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>返回计算出的线条路径画出的图形对象</p>
+<dl class="simple">
+<dt>Returns：</dt><dd><p>QPainterPath：计算出的线条路径</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.items.RectEdge.updatePositions">
+<span class="sig-name descname"><span class="pre">updatePositions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.items.RectEdge.updatePositions" title="Permalink to this definition">¶</a></dt>
+<dd><p>更新线条位置</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-canvas.scene">
+<span id="canvas-scene-module"></span><h2>canvas.scene module<a class="headerlink" href="#module-canvas.scene" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="canvas.scene.GraphicScene">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">canvas.scene.</span></span><span class="sig-name descname"><span class="pre">GraphicScene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.scene.GraphicScene" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QGraphicsScene</span></code></p>
+<p>该类用作 QGraphicsItems 的容器</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.scene.GraphicScene.nodes">
+<span class="sig-name descname"><span class="pre">nodes</span></span><a class="headerlink" href="#canvas.scene.GraphicScene.nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于储存当前绘制图形的顶点图元</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.scene.GraphicScene.edges">
+<span class="sig-name descname"><span class="pre">edges</span></span><a class="headerlink" href="#canvas.scene.GraphicScene.edges" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于储存当前绘制图形的边</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.scene.GraphicScene.shapes">
+<span class="sig-name descname"><span class="pre">shapes</span></span><a class="headerlink" href="#canvas.scene.GraphicScene.shapes" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于储存当前scene中的图形</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">nodes_info（dict)</span></span></dt>
+<dd><p>用于暂时储存所有的图形信息 （参考json的格式）</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.scene.GraphicScene.store_info">
+<span class="sig-name descname"><span class="pre">store_info</span></span><a class="headerlink" href="#canvas.scene.GraphicScene.store_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.scene.GraphicScene.addEdge">
+<span class="sig-name descname"><span class="pre">addEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.scene.GraphicScene.addEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>将新建的边添加到scene和储存边的list中</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>edge</strong> (<em>QGraphicsPathItem</em>) – 新建的边</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.scene.GraphicScene.addNode">
+<span class="sig-name descname"><span class="pre">addNode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.scene.GraphicScene.addNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>将新建的顶点图元添加至scene中，同时添加到储存顶点的list中</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>node</strong> (<em>QgraphicsItem</em>) – 新建的顶点图元</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.scene.GraphicScene.addNodesInfo">
+<span class="sig-name descname"><span class="pre">addNodesInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.scene.GraphicScene.addNodesInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>将新建的图形信息添加到暂时储存的dictionary中</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>label</strong> (<em>str</em>) – 标签名</p></li>
+<li><p><strong>group_id</strong> (<em>int</em>) – 分组编号</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>所有的顶点图元</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.scene.GraphicScene.removeEdge">
+<span class="sig-name descname"><span class="pre">removeEdge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.scene.GraphicScene.removeEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>将删除的边从scene和储存边的list中移除</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>edge</strong> (<em>QGraphicsPathItem</em>) – 需要删除的边</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.scene.GraphicScene.removeNode">
+<span class="sig-name descname"><span class="pre">removeNode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.scene.GraphicScene.removeNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>将需要删除的顶点图元从scene和储存的list中移除</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>node</strong> (<em>QgraphicsItem</em>) – 需要移除的顶点图元</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-canvas.view">
+<span id="canvas-view-module"></span><h2>canvas.view module<a class="headerlink" href="#module-canvas.view" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="canvas.view.GraphicView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">canvas.view.</span></span><span class="sig-name descname"><span class="pre">GraphicView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scene</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QGraphicsView</span></code></p>
+<p>该类用于显示QgraphicsScene中的内容
+包含了大多数涉及到对QgraphicsScene中所绘制图形进行整体拖动、删除等编辑操作的函数</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.scene">
+<span class="sig-name descname"><span class="pre">scene</span></span><a class="headerlink" href="#canvas.view.GraphicView.scene" title="Permalink to this definition">¶</a></dt>
+<dd><p>QgraphicsScene的实例化对象，将scene传入此处托管，方便在view中维护</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QGraphicsScene</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">init_size</span> <span class="pre">=</span> <span class="pre">self.size()</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.edge_enable">
+<span class="sig-name descname"><span class="pre">edge_enable</span></span><a class="headerlink" href="#canvas.view.GraphicView.edge_enable" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于记录目前是否可以画线条</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.drag_edge">
+<span class="sig-name descname"><span class="pre">drag_edge</span></span><a class="headerlink" href="#canvas.view.GraphicView.drag_edge" title="Permalink to this definition">¶</a></dt>
+<dd><p>记录拖拽时的线</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QGraphicsPathItem</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.poly_triggered">
+<span class="sig-name descname"><span class="pre">poly_triggered</span></span><a class="headerlink" href="#canvas.view.GraphicView.poly_triggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于记录绘制多边形功能是否开启</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.rect_triggered">
+<span class="sig-name descname"><span class="pre">rect_triggered</span></span><a class="headerlink" href="#canvas.view.GraphicView.rect_triggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于记录绘制矩形功能是否开启</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.point_triggered">
+<span class="sig-name descname"><span class="pre">point_triggered</span></span><a class="headerlink" href="#canvas.view.GraphicView.point_triggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于记录绘制点功能是否开启</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.line_triggered">
+<span class="sig-name descname"><span class="pre">line_triggered</span></span><a class="headerlink" href="#canvas.view.GraphicView.line_triggered" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于记录绘制线段功能是否开启</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.checkCtrl">
+<span class="sig-name descname"><span class="pre">checkCtrl</span></span><a class="headerlink" href="#canvas.view.GraphicView.checkCtrl" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于记录Ctr键是否被按下</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">label_dialog：LabelDialog的实例化对象，绘制完一个标签弹出的命名窗口。</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.graphicsTouched_delete">
+<span class="sig-name descname"><span class="pre">graphicsTouched_delete</span></span><a class="headerlink" href="#canvas.view.GraphicView.graphicsTouched_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于记录鼠标是否在多边形内部</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.shapeTouched_delete">
+<span class="sig-name descname"><span class="pre">shapeTouched_delete</span></span><a class="headerlink" href="#canvas.view.GraphicView.shapeTouched_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于记录被鼠标触发的图形对象</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.graphicsTouched_move">
+<span class="sig-name descname"><span class="pre">graphicsTouched_move</span></span><a class="headerlink" href="#canvas.view.GraphicView.graphicsTouched_move" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于记录图形是否可以被拖动</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.shapeTouched_move">
+<span class="sig-name descname"><span class="pre">shapeTouched_move</span></span><a class="headerlink" href="#canvas.view.GraphicView.shapeTouched_move" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于记录被拖动的图形对象</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.edit_enable">
+<span class="sig-name descname"><span class="pre">edit_enable</span></span><a class="headerlink" href="#canvas.view.GraphicView.edit_enable" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于记录编辑模式是否开启</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.position_orig">
+<span class="sig-name descname"><span class="pre">position_orig</span></span><a class="headerlink" href="#canvas.view.GraphicView.position_orig" title="Permalink to this definition">¶</a></dt>
+<dd><p>鼠标在多边形内部时，用于记录鼠标左击的位置</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPoint</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.position_press_move">
+<span class="sig-name descname"><span class="pre">position_press_move</span></span><a class="headerlink" href="#canvas.view.GraphicView.position_press_move" title="Permalink to this definition">¶</a></dt>
+<dd><p>鼠标在多边形内部时，用于跟踪鼠标左击并移动时的位置</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPoint</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.q_pos_list_old">
+<span class="sig-name descname"><span class="pre">q_pos_list_old</span></span><a class="headerlink" href="#canvas.view.GraphicView.q_pos_list_old" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于储存上一个被鼠标触发的多边形的顶点对应Qpoint对象</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.poly_now">
+<span class="sig-name descname"><span class="pre">poly_now</span></span><a class="headerlink" href="#canvas.view.GraphicView.poly_now" title="Permalink to this definition">¶</a></dt>
+<dd><p>表示此时被触发的多边形对象</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#canvas.items.GraphicPolygonItem" title="canvas.items.GraphicPolygonItem">GraphicPolygonItem</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.point_now">
+<span class="sig-name descname"><span class="pre">point_now</span></span><a class="headerlink" href="#canvas.view.GraphicView.point_now" title="Permalink to this definition">¶</a></dt>
+<dd><p>表示此时鼠标点击的QGraphicsItem对象(若无则为None)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QGraphicsItem</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.rect_points_list">
+<span class="sig-name descname"><span class="pre">rect_points_list</span></span><a class="headerlink" href="#canvas.view.GraphicView.rect_points_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于储存当前绘制的矩形已确定的斜对角顶点图元（一个或两个）</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.rect_draw_points">
+<span class="sig-name descname"><span class="pre">rect_draw_points</span></span><a class="headerlink" href="#canvas.view.GraphicView.rect_draw_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于储存绘制矩形的两个斜对角顶点图元(在 rect_points_list被清空前，储存两个顶点信息）</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.rect_pair_points">
+<span class="sig-name descname"><span class="pre">rect_pair_points</span></span><a class="headerlink" href="#canvas.view.GraphicView.rect_pair_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于储存所有矩形的两个斜对角顶点图元</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.delete_confirm">
+<span class="sig-name descname"><span class="pre">delete_confirm</span></span><a class="headerlink" href="#canvas.view.GraphicView.delete_confirm" title="Permalink to this definition">¶</a></dt>
+<dd><p>DeleteConfirm实例化对象，确认是否删除的弹窗</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QWidget</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.activeExit">
+<span class="sig-name descname"><span class="pre">activeExit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.activeExit" title="Permalink to this definition">¶</a></dt>
+<dd><p>若标签信息录入成功，则发送可编辑信号；
+否则（窗口被直接关闭）撤回一步标记操作</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.can_edit_signal">
+<span class="sig-name descname"><span class="pre">can_edit_signal</span></span><a class="headerlink" href="#canvas.view.GraphicView.can_edit_signal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.cannot_edit_signal">
+<span class="sig-name descname"><span class="pre">cannot_edit_signal</span></span><a class="headerlink" href="#canvas.view.GraphicView.cannot_edit_signal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.confirmDelete">
+<span class="sig-name descname"><span class="pre">confirmDelete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.confirmDelete" title="Permalink to this definition">¶</a></dt>
+<dd><p>确认删除某标签后对应的删除操作，包括从scene中移除item和后端信息的清除</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.createNode">
+<span class="sig-name descname"><span class="pre">createNode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shape_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event_pos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.createNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>新建顶点图元并加入到scene中</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>shape_type</strong> (<em>str</em>) – 新建顶点所在图形类型</p></li>
+<li><p><strong>event_pos</strong> (<em>QPoint</em>) – 鼠标点击处</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>新建的顶点图元对象</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QGraphicsItem</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.delete_label_signal">
+<span class="sig-name descname"><span class="pre">delete_label_signal</span></span><a class="headerlink" href="#canvas.view.GraphicView.delete_label_signal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.drawRect">
+<span class="sig-name descname"><span class="pre">drawRect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodes_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.drawRect" title="Permalink to this definition">¶</a></dt>
+<dd><p>绘制矩形</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>nodes_list</strong> (<em>list</em>) – 储存矩形两个斜对角顶点图元</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.edgeDragEnd">
+<span class="sig-name descname"><span class="pre">edgeDragEnd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.edgeDragEnd" title="Permalink to this definition">¶</a></dt>
+<dd><p>再次点击确认终点图元后在scene上画实线，并删除画线过程中的虚线</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>item</strong> (<em>QgraphicsItem</em>) – 终点顶点图元</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.edgeDragStart">
+<span class="sig-name descname"><span class="pre">edgeDragStart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.edgeDragStart" title="Permalink to this definition">¶</a></dt>
+<dd><p>确认起点端点后开始画线</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>item</strong> (<em>QGraphicsItem</em>) – 线段起始的图元对象</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.emptyPoly">
+<span class="sig-name descname"><span class="pre">emptyPoly</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.emptyPoly" title="Permalink to this definition">¶</a></dt>
+<dd><p>擦除对应多边形</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.fillPoly">
+<span class="sig-name descname"><span class="pre">fillPoly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.fillPoly" title="Permalink to this definition">¶</a></dt>
+<dd><p>填充对应多边形</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pos_list</strong> (<em>list</em>) – 存放多边形的QPointF</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.getItemAtClick">
+<span class="sig-name descname"><span class="pre">getItemAtClick</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.getItemAtClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取点击位置的图元，无则返回None.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QEvent</em>) – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>鼠标点击处的图元对象</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QGraphicsItem</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.init_ui">
+<span class="sig-name descname"><span class="pre">init_ui</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.init_ui" title="Permalink to this definition">¶</a></dt>
+<dd><p>初始化Graphicsview部件</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.insideScene">
+<span class="sig-name descname"><span class="pre">insideScene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event_pos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.insideScene" title="Permalink to this definition">¶</a></dt>
+<dd><p>判断鼠标位置在scene里或是外</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event_pos</strong> (<em>QPoint</em>) – 鼠标所在的坐标（相对于view）</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>是否在scene内</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.itemGetCentralPos">
+<span class="sig-name descname"><span class="pre">itemGetCentralPos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.itemGetCentralPos" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取一个图元点， 返回其中心QpointF坐标</p>
+<dl class="simple">
+<dt>Args</dt><dd><p>item(QgraphicsItem): 图元点</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.judgePosition">
+<span class="sig-name descname"><span class="pre">judgePosition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position_to_judge</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.judgePosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>判断传入的点是否在图形内部</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>position_to_judge</strong> (<em>QPoint</em>) – 鼠标点击或者移动时的位置（具体看需要）</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.keyPressEvent">
+<span class="sig-name descname"><span class="pre">keyPressEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.keyPressEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>键盘按下后的响应
+1)按下Ctrl键: self.checkCtrl = True</p>
+<p>2)按下M键: 打印相应内容</p>
+<p>3)按下Backspace键:撤回一步标记操作</p>
+<p>4)按下Delete键: 删除对应图形操作</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QEvent</em>) – 键盘按下事件</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.keyReleaseEvent">
+<span class="sig-name descname"><span class="pre">keyReleaseEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.keyReleaseEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>键盘释放事件响应</p>
+<p>释放Ctrl键: self.checkCtrl = False</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QEvent</em>) – 键盘按键被释放</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.mouseMoveEvent">
+<span class="sig-name descname"><span class="pre">mouseMoveEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.mouseMoveEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>对鼠标移动事件的响应</p>
+<p>1)标记功能下，随着鼠标移动实时更新临时的线条</p>
+<p>2)编辑模式下，鼠标左击在图形内部拖拽实现图形整体移动；鼠标无论是否点击，鼠标在图形内部则填充图形</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QEvent</em>) – 鼠标移动事件</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.mousePressEvent">
+<span class="sig-name descname"><span class="pre">mousePressEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.mousePressEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>鼠标按钮按下事件响应</p>
+<p>1)在标记功能被触发时，可在图片内创建多边形、矩形、点或线段</p>
+<p>2)在编辑功能被触发时，点击图形内部开启拖动整个图形的功能</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QEvent</em>) – 鼠标按下事件</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.nodeGetEdge">
+<span class="sig-name descname"><span class="pre">nodeGetEdge</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.nodeGetEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取顶点图元对应的线并保存到每个顶点图元对应的属性中</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.pointGetCentral">
+<span class="sig-name descname"><span class="pre">pointGetCentral</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">q_point</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.pointGetCentral" title="Permalink to this definition">¶</a></dt>
+<dd><p>设置图元中央位置在鼠标所点击处并返回中央位置</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>q_point</strong> (<em>QPoint</em>) – 鼠标点击处的点对象</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>图元位置重设后的点</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPoint</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.pointsOnScene">
+<span class="sig-name descname"><span class="pre">pointsOnScene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.pointsOnScene" title="Permalink to this definition">¶</a></dt>
+<dd><p>判断点是否已经被checkbox隐藏了</p>
+<dl class="simple">
+<dt>Args：</dt><dd><p>points(QGraphicsItem): 对应图形的图元顶点</p>
+</dd>
+<dt>Returns：</dt><dd><p>bool: 点是否被checkbox隐藏</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.rectGetPoint">
+<span class="sig-name descname"><span class="pre">rectGetPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pair_points</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.rectGetPoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>通过矩形已知的两个点， 得到所有的四个点的坐标</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pair_points</strong> (<em>list</em>) – 储存矩形两个对应点</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>储存矩形所有4个点的q_point</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.sendData">
+<span class="sig-name descname"><span class="pre">sendData</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.sendData" title="Permalink to this definition">¶</a></dt>
+<dd><p>用户输入标签名、组号等标签信息后传递数据，保存至已用标签名和组号
+同时将标签名、组号、顶点图元都传入后端信息储存处</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str：标签名
+int：组号
+QgraphicsItem：顶点图元
+QgraphicsScene: 管理所有图元的scene</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.set_arrow_cursor_signal">
+<span class="sig-name descname"><span class="pre">set_arrow_cursor_signal</span></span><a class="headerlink" href="#canvas.view.GraphicView.set_arrow_cursor_signal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.set_cross_cursor_signal">
+<span class="sig-name descname"><span class="pre">set_cross_cursor_signal</span></span><a class="headerlink" href="#canvas.view.GraphicView.set_cross_cursor_signal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.set_hand_cursor_signal">
+<span class="sig-name descname"><span class="pre">set_hand_cursor_signal</span></span><a class="headerlink" href="#canvas.view.GraphicView.set_hand_cursor_signal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.toQpoint">
+<span class="sig-name descname"><span class="pre">toQpoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point_f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.toQpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>将QPointF转化为QPoint，但是会损失一定的精度</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>point_f</strong> (<em>QPointF</em>) – 原先的QPointF点对象</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>转化后的QPoint对象</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPoint</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.wheelEvent">
+<span class="sig-name descname"><span class="pre">wheelEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.wheelEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>鼠标滚轮事件响应</p>
+<p>滚轮控制图片的缩放</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> (<em>QEvent</em>) – 鼠标滚轮事件</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.zoomIn">
+<span class="sig-name descname"><span class="pre">zoomIn</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.zoomIn" title="Permalink to this definition">¶</a></dt>
+<dd><p>图片放大</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="canvas.view.GraphicView.zoomOut">
+<span class="sig-name descname"><span class="pre">zoomOut</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#canvas.view.GraphicView.zoomOut" title="Permalink to this definition">¶</a></dt>
+<dd><p>图片缩小</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-canvas">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-canvas" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">canvas package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-canvas.items">canvas.items module</a></li>
+<li><a class="reference internal" href="#module-canvas.scene">canvas.scene module</a></li>
+<li><a class="reference internal" href="#module-canvas.view">canvas.view module</a></li>
+<li><a class="reference internal" href="#module-canvas">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/canvas.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">labelall 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">canvas package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, jun.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
+    </div>
+  </body>
+</html>

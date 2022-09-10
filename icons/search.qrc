@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="新前缀">
+    <file>search.svg</file>
+    <file>cil-search.svg</file>
+  </qresource>
+</RCC>

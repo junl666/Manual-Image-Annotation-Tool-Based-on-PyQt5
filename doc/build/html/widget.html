@@ -1,0 +1,822 @@
+
+<!DOCTYPE html>
+
+<html lang="EN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>widget package &#8212; labelall 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinxdoc.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">labelall 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">widget package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="widget-package">
+<h1>widget package<a class="headerlink" href="#widget-package" title="Permalink to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-widget.contrast_brightness_dialog">
+<span id="widget-contrast-brightness-dialog-module"></span><h2>widget.contrast_brightness_dialog module<a class="headerlink" href="#module-widget.contrast_brightness_dialog" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="widget.contrast_brightness_dialog.SliderWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">widget.contrast_brightness_dialog.</span></span><span class="sig-name descname"><span class="pre">SliderWindow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.contrast_brightness_dialog.SliderWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QWidget</span></code></p>
+<p>该类用于创建调节亮度和对比度的窗口</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.contrast_brightness_dialog.SliderWindow.label_brightness">
+<span class="sig-name descname"><span class="pre">label_brightness</span></span><a class="headerlink" href="#widget.contrast_brightness_dialog.SliderWindow.label_brightness" title="Permalink to this definition">¶</a></dt>
+<dd><p>标明“亮度”的标签</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QLabel</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.contrast_brightness_dialog.SliderWindow.label_contrast">
+<span class="sig-name descname"><span class="pre">label_contrast</span></span><a class="headerlink" href="#widget.contrast_brightness_dialog.SliderWindow.label_contrast" title="Permalink to this definition">¶</a></dt>
+<dd><p>标明“对比度”的标签</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QLabel</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.contrast_brightness_dialog.SliderWindow.slider_brightness">
+<span class="sig-name descname"><span class="pre">slider_brightness</span></span><a class="headerlink" href="#widget.contrast_brightness_dialog.SliderWindow.slider_brightness" title="Permalink to this definition">¶</a></dt>
+<dd><p>调节亮度水平滑动条</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QSlider</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.contrast_brightness_dialog.SliderWindow.slider_contrast">
+<span class="sig-name descname"><span class="pre">slider_contrast</span></span><a class="headerlink" href="#widget.contrast_brightness_dialog.SliderWindow.slider_contrast" title="Permalink to this definition">¶</a></dt>
+<dd><p>调节对比度水平滑动条</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QSlider</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.contrast_brightness_dialog.SliderWindow.bright_contrast_signal">
+<span class="sig-name descname"><span class="pre">bright_contrast_signal</span></span><a class="headerlink" href="#widget.contrast_brightness_dialog.SliderWindow.bright_contrast_signal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.contrast_brightness_dialog.SliderWindow.brightnessChanged">
+<span class="sig-name descname"><span class="pre">brightnessChanged</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.contrast_brightness_dialog.SliderWindow.brightnessChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>亮度滑动条被拖动释放后传递新的亮度值</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.contrast_brightness_dialog.SliderWindow.contrastChanged">
+<span class="sig-name descname"><span class="pre">contrastChanged</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.contrast_brightness_dialog.SliderWindow.contrastChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>对比度滑动条被拖动释放后传递新的对比度值</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.contrast_brightness_dialog.SliderWindow.sendEditBrightness">
+<span class="sig-name descname"><span class="pre">sendEditBrightness</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.contrast_brightness_dialog.SliderWindow.sendEditBrightness" title="Permalink to this definition">¶</a></dt>
+<dd><p>发射调整亮度的信号</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.contrast_brightness_dialog.SliderWindow.sendEditContrast">
+<span class="sig-name descname"><span class="pre">sendEditContrast</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.contrast_brightness_dialog.SliderWindow.sendEditContrast" title="Permalink to this definition">¶</a></dt>
+<dd><p>发射调整对比度的信号</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-widget.delete_confirm_widget">
+<span id="widget-delete-confirm-widget-module"></span><h2>widget.delete_confirm_widget module<a class="headerlink" href="#module-widget.delete_confirm_widget" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="widget.delete_confirm_widget.DeleteConfirm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">widget.delete_confirm_widget.</span></span><span class="sig-name descname"><span class="pre">DeleteConfirm</span></span><a class="headerlink" href="#widget.delete_confirm_widget.DeleteConfirm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QWidget</span></code></p>
+<p>该类用于创建确认删除的窗口</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.delete_confirm_widget.DeleteConfirm.delete_yes">
+<span class="sig-name descname"><span class="pre">delete_yes</span></span><a class="headerlink" href="#widget.delete_confirm_widget.DeleteConfirm.delete_yes" title="Permalink to this definition">¶</a></dt>
+<dd><p>确认删除按钮</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPushButton</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.delete_confirm_widget.DeleteConfirm.delete_no">
+<span class="sig-name descname"><span class="pre">delete_no</span></span><a class="headerlink" href="#widget.delete_confirm_widget.DeleteConfirm.delete_no" title="Permalink to this definition">¶</a></dt>
+<dd><p>取消按钮</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPushButton</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-widget.file_dialog">
+<span id="widget-file-dialog-module"></span><h2>widget.file_dialog module<a class="headerlink" href="#module-widget.file_dialog" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="widget.file_dialog.FileDialogPreview">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">widget.file_dialog.</span></span><span class="sig-name descname"><span class="pre">FileDialogPreview</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dialog.FileDialogPreview" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QFileDialog</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dialog.FileDialogPreview.onChange">
+<span class="sig-name descname"><span class="pre">onChange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dialog.FileDialogPreview.onChange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="widget.file_dialog.ScrollAreaPreview">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">widget.file_dialog.</span></span><span class="sig-name descname"><span class="pre">ScrollAreaPreview</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dialog.ScrollAreaPreview" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QScrollArea</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dialog.ScrollAreaPreview.clear">
+<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dialog.ScrollAreaPreview.clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dialog.ScrollAreaPreview.setPixmap">
+<span class="sig-name descname"><span class="pre">setPixmap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pixmap</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dialog.ScrollAreaPreview.setPixmap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dialog.ScrollAreaPreview.setText">
+<span class="sig-name descname"><span class="pre">setText</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dialog.ScrollAreaPreview.setText" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-widget.file_dock_widget">
+<span id="widget-file-dock-widget-module"></span><h2>widget.file_dock_widget module<a class="headerlink" href="#module-widget.file_dock_widget" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">widget.file_dock_widget.</span></span><span class="sig-name descname"><span class="pre">FileDockWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">_FileDockWidget__args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QDockWidget</span></code></p>
+<p>可移动的窗口类，用于创建文件夹图片列表窗口</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.header_field">
+<span class="sig-name descname"><span class="pre">header_field</span></span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.header_field" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于设置行表头字段和设置列数</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.table">
+<span class="sig-name descname"><span class="pre">table</span></span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.table" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于创建文件列表</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QTableWidget</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.filepath_list">
+<span class="sig-name descname"><span class="pre">filepath_list</span></span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.filepath_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于储存文件夹内所有文件路径</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.click_num">
+<span class="sig-name descname"><span class="pre">click_num</span></span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.click_num" title="Permalink to this definition">¶</a></dt>
+<dd><p>表示被点击的图片序号</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.savewindow">
+<span class="sig-name descname"><span class="pre">savewindow</span></span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.savewindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>SaveWindow 类的实例化对象，切换图片时的确认保存窗口</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QWidget</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.addRow">
+<span class="sig-name descname"><span class="pre">addRow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.addRow" title="Permalink to this definition">¶</a></dt>
+<dd><p>向 table widget中添加行</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filepath</strong> – 需要添加行对应的文件路径</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.changeimg_withoutsave">
+<span class="sig-name descname"><span class="pre">changeimg_withoutsave</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.changeimg_withoutsave" title="Permalink to this definition">¶</a></dt>
+<dd><p>切换图片且不保存</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.changeimg_withsave">
+<span class="sig-name descname"><span class="pre">changeimg_withsave</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.changeimg_withsave" title="Permalink to this definition">¶</a></dt>
+<dd><p>切换图片且保存</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.close_back">
+<span class="sig-name descname"><span class="pre">close_back</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.close_back" title="Permalink to this definition">¶</a></dt>
+<dd><p>直接关闭保存选项窗口则不切换图片</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.deleteAllRow">
+<span class="sig-name descname"><span class="pre">deleteAllRow</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.deleteAllRow" title="Permalink to this definition">¶</a></dt>
+<dd><p>从table widget中删除所有行</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.doubleclick">
+<span class="sig-name descname"><span class="pre">doubleclick</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.doubleclick" title="Permalink to this definition">¶</a></dt>
+<dd><p>双击切换图片(不保存）</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.generateMenu">
+<span class="sig-name descname"><span class="pre">generateMenu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.generateMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>设置标签列表的右键菜单，点击删除时执行删除操作</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pos</strong> (<em>QPoint</em>) – 鼠标右击时的位置</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.initUI">
+<span class="sig-name descname"><span class="pre">initUI</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.initUI" title="Permalink to this definition">¶</a></dt>
+<dd><p>初始化表格</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.setInitTableHead">
+<span class="sig-name descname"><span class="pre">setInitTableHead</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.setInitTableHead" title="Permalink to this definition">¶</a></dt>
+<dd><p>设置行表头字段</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.setTableWidget">
+<span class="sig-name descname"><span class="pre">setTableWidget</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.setTableWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>表格样式设置</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.signal_file">
+<span class="sig-name descname"><span class="pre">signal_file</span></span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.signal_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.signal_save">
+<span class="sig-name descname"><span class="pre">signal_save</span></span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.signal_save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_dock_widget.FileDockWidget.sliderchange">
+<span class="sig-name descname"><span class="pre">sliderchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_dock_widget.FileDockWidget.sliderchange" title="Permalink to this definition">¶</a></dt>
+<dd><p>根据滑动条值变化切换图片</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>num</strong> – 滑动条对应值(int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="widget.file_dock_widget.SaveWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">widget.file_dock_widget.</span></span><span class="sig-name descname"><span class="pre">SaveWindow</span></span><a class="headerlink" href="#widget.file_dock_widget.SaveWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QWidget</span></code></p>
+<p>该类用于创建切换图片时的保存选项窗口</p>
+</dd></dl>
+
+</section>
+<section id="module-widget.file_slider">
+<span id="widget-file-slider-module"></span><h2>widget.file_slider module<a class="headerlink" href="#module-widget.file_slider" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="widget.file_slider.FileSlider">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">widget.file_slider.</span></span><span class="sig-name descname"><span class="pre">FileSlider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">widget</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_slider.FileSlider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QSlider</span></code></p>
+<p>该类用于创建Graphicsview下方的选择图片滑动条</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.file_slider.FileSlider.filechange">
+<span class="sig-name descname"><span class="pre">filechange</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.file_slider.FileSlider.filechange" title="Permalink to this definition">¶</a></dt>
+<dd><p>当滑动条的值改变时，发送切换图片信号</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.file_slider.FileSlider.signal_filechange">
+<span class="sig-name descname"><span class="pre">signal_filechange</span></span><a class="headerlink" href="#widget.file_slider.FileSlider.signal_filechange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-widget.label_add_widget">
+<span id="widget-label-add-widget-module"></span><h2>widget.label_add_widget module<a class="headerlink" href="#module-widget.label_add_widget" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">widget.label_add_widget.</span></span><span class="sig-name descname"><span class="pre">LabelDialog</span></span><a class="headerlink" href="#widget.label_add_widget.LabelDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QWidget</span></code></p>
+<p>该类用于创建标签命名窗口</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.inputbutton">
+<span class="sig-name descname"><span class="pre">inputbutton</span></span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.inputbutton" title="Permalink to this definition">¶</a></dt>
+<dd><p>输入确认按钮</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPushButton</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.line_edit_label">
+<span class="sig-name descname"><span class="pre">line_edit_label</span></span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.line_edit_label" title="Permalink to this definition">¶</a></dt>
+<dd><p>标签名文本框栏</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QLineEdit</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.line_edit_groupid">
+<span class="sig-name descname"><span class="pre">line_edit_groupid</span></span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.line_edit_groupid" title="Permalink to this definition">¶</a></dt>
+<dd><p>组号文本框栏</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QLineEdit</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>储存标签名</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.group">
+<span class="sig-name descname"><span class="pre">group</span></span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.group" title="Permalink to this definition">¶</a></dt>
+<dd><p>储存组号</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.comboBox">
+<span class="sig-name descname"><span class="pre">comboBox</span></span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.comboBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>储存使用过的标签名</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QComboBox</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.comboBox2">
+<span class="sig-name descname"><span class="pre">comboBox2</span></span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.comboBox2" title="Permalink to this definition">¶</a></dt>
+<dd><p>储存使用过的组号</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QComboBox</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.data_ready">
+<span class="sig-name descname"><span class="pre">data_ready</span></span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.data_ready" title="Permalink to this definition">¶</a></dt>
+<dd><p>表示标签信息录入成功</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.Data_Ready">
+<span class="sig-name descname"><span class="pre">Data_Ready</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.Data_Ready" title="Permalink to this definition">¶</a></dt>
+<dd><p>标签名、组号成功输入</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.auto1">
+<span class="sig-name descname"><span class="pre">auto1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.auto1" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择已有标签名给当前标签命名</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.auto2">
+<span class="sig-name descname"><span class="pre">auto2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.auto2" title="Permalink to this definition">¶</a></dt>
+<dd><p>选择已有组号给当前标签分组</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.closeEvent">
+<span class="sig-name descname"><span class="pre">closeEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">QCloseEvent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.closeEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>窗口关闭回到标记上一步</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> – 窗口关闭事件</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.cursor_move">
+<span class="sig-name descname"><span class="pre">cursor_move</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.cursor_move" title="Permalink to this definition">¶</a></dt>
+<dd><p>输入完标签名按下回车自动切换光标位置</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.my_Signal">
+<span class="sig-name descname"><span class="pre">my_Signal</span></span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.my_Signal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_add_widget.LabelDialog.sendEditContent">
+<span class="sig-name descname"><span class="pre">sendEditContent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_add_widget.LabelDialog.sendEditContent" title="Permalink to this definition">¶</a></dt>
+<dd><p>发送撤回信号</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-widget.label_dock_widget">
+<span id="widget-label-dock-widget-module"></span><h2>widget.label_dock_widget module<a class="headerlink" href="#module-widget.label_dock_widget" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="widget.label_dock_widget.Checkbox">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">widget.label_dock_widget.</span></span><span class="sig-name descname"><span class="pre">Checkbox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nodes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scene</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_dock_widget.Checkbox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QCheckBox</span></code></p>
+<p>该类用于创建展示标签信息的复选框</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_dock_widget.Checkbox.nodes_list">
+<span class="sig-name descname"><span class="pre">nodes_list</span></span><a class="headerlink" href="#widget.label_dock_widget.Checkbox.nodes_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>储存对应标签的顶点图元</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_dock_widget.Checkbox.scene">
+<span class="sig-name descname"><span class="pre">scene</span></span><a class="headerlink" href="#widget.label_dock_widget.Checkbox.scene" title="Permalink to this definition">¶</a></dt>
+<dd><p>表示对应的QgraphicsScene对象</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QgraphicsScene</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_dock_widget.Checkbox.showOrHideItem">
+<span class="sig-name descname"><span class="pre">showOrHideItem</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_dock_widget.Checkbox.showOrHideItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>隐藏或显示被点击的复选框</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">widget.label_dock_widget.</span></span><span class="sig-name descname"><span class="pre">LabelDockWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">_LabelDockWidget__args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QDockWidget</span></code></p>
+<p>可移动的窗口类，用于创建标签列表窗口</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget.header_field">
+<span class="sig-name descname"><span class="pre">header_field</span></span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget.header_field" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于设置行表头字段和设置列数</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget.all_checkbox">
+<span class="sig-name descname"><span class="pre">all_checkbox</span></span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget.all_checkbox" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于储存当前所有复选框</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget.table">
+<span class="sig-name descname"><span class="pre">table</span></span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget.table" title="Permalink to this definition">¶</a></dt>
+<dd><p>用于创建标签列表</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QTableWidget</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget.renamewin">
+<span class="sig-name descname"><span class="pre">renamewin</span></span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget.renamewin" title="Permalink to this definition">¶</a></dt>
+<dd><p>‘RenameWindow’类的实例化对象，为重命名窗口</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QWidget</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget.Delete_label_in_table">
+<span class="sig-name descname"><span class="pre">Delete_label_in_table</span></span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget.Delete_label_in_table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget.Havechaged">
+<span class="sig-name descname"><span class="pre">Havechaged</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget.Havechaged" title="Permalink to this definition">¶</a></dt>
+<dd><p>重命名成功录入标签名与组号后对标签列表显示内容和
+后台储存的信息进行修改</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget.addCheckBox">
+<span class="sig-name descname"><span class="pre">addCheckBox</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget.addCheckBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>向Table widget中添加复选框</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget.addRow">
+<span class="sig-name descname"><span class="pre">addRow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scene</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget.addRow" title="Permalink to this definition">¶</a></dt>
+<dd><p>将新建的标签添加到table widget中，并将对应checkbox初始化为选中状态，同时后台存入复选框信息</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>label</strong> (<em>str</em>) – 用户输入的标签名</p></li>
+<li><p><strong>group_id</strong> (<em>int</em>) – 用户输入的组号</p></li>
+<li><p><strong>nodes</strong> (<em>list</em>) – 储存当前标签的顶点图元</p></li>
+<li><p><strong>scene</strong> (<em>QgraphicsScene</em>) – 管理图元的scene</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget.changeValue">
+<span class="sig-name descname"><span class="pre">changeValue</span></span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget.changeValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget.deleteAllRow">
+<span class="sig-name descname"><span class="pre">deleteAllRow</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget.deleteAllRow" title="Permalink to this definition">¶</a></dt>
+<dd><p>从table widget中删除所有行</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget.generateMenu">
+<span class="sig-name descname"><span class="pre">generateMenu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget.generateMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>设置标签列表的右键菜单并对点击不同选项作出响应（删除、重命名）</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pos</strong> (<em>QPoint</em>) – 鼠标右击时的位置</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget.initUI">
+<span class="sig-name descname"><span class="pre">initUI</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget.initUI" title="Permalink to this definition">¶</a></dt>
+<dd><p>初始化表格</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget.setDockWidget">
+<span class="sig-name descname"><span class="pre">setDockWidget</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget.setDockWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>表格样式设置</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_dock_widget.LabelDockWidget.setInitTableHead">
+<span class="sig-name descname"><span class="pre">setInitTableHead</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_dock_widget.LabelDockWidget.setInitTableHead" title="Permalink to this definition">¶</a></dt>
+<dd><p>设置行表头字段</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="widget.label_dock_widget.RenameWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">widget.label_dock_widget.</span></span><span class="sig-name descname"><span class="pre">RenameWindow</span></span><a class="headerlink" href="#widget.label_dock_widget.RenameWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QWidget</span></code></p>
+<p>该类用于创建重命名窗口</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_dock_widget.RenameWindow.inputbutton">
+<span class="sig-name descname"><span class="pre">inputbutton</span></span><a class="headerlink" href="#widget.label_dock_widget.RenameWindow.inputbutton" title="Permalink to this definition">¶</a></dt>
+<dd><p>输入确认按钮</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QPushButton</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_dock_widget.RenameWindow.line_edit_label">
+<span class="sig-name descname"><span class="pre">line_edit_label</span></span><a class="headerlink" href="#widget.label_dock_widget.RenameWindow.line_edit_label" title="Permalink to this definition">¶</a></dt>
+<dd><p>输入标签文本框</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QLineEdit</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_dock_widget.RenameWindow.line_edit_groupid">
+<span class="sig-name descname"><span class="pre">line_edit_groupid</span></span><a class="headerlink" href="#widget.label_dock_widget.RenameWindow.line_edit_groupid" title="Permalink to this definition">¶</a></dt>
+<dd><p>输入组号文本框</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>QLineEdit</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_dock_widget.RenameWindow.Data_Ready">
+<span class="sig-name descname"><span class="pre">Data_Ready</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_dock_widget.RenameWindow.Data_Ready" title="Permalink to this definition">¶</a></dt>
+<dd><p>标签名、组号成功输入</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_dock_widget.RenameWindow.closeEvent">
+<span class="sig-name descname"><span class="pre">closeEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">QCloseEvent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_dock_widget.RenameWindow.closeEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>窗口关闭回到标记上一步</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>event</strong> – 窗口关闭事件</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="widget.label_dock_widget.RenameWindow.my_Signal">
+<span class="sig-name descname"><span class="pre">my_Signal</span></span><a class="headerlink" href="#widget.label_dock_widget.RenameWindow.my_Signal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="widget.label_dock_widget.RenameWindow.sendEditContent">
+<span class="sig-name descname"><span class="pre">sendEditContent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#widget.label_dock_widget.RenameWindow.sendEditContent" title="Permalink to this definition">¶</a></dt>
+<dd><p>发送撤回信号</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-widget">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-widget" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">widget package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-widget.contrast_brightness_dialog">widget.contrast_brightness_dialog module</a></li>
+<li><a class="reference internal" href="#module-widget.delete_confirm_widget">widget.delete_confirm_widget module</a></li>
+<li><a class="reference internal" href="#module-widget.file_dialog">widget.file_dialog module</a></li>
+<li><a class="reference internal" href="#module-widget.file_dock_widget">widget.file_dock_widget module</a></li>
+<li><a class="reference internal" href="#module-widget.file_slider">widget.file_slider module</a></li>
+<li><a class="reference internal" href="#module-widget.label_add_widget">widget.label_add_widget module</a></li>
+<li><a class="reference internal" href="#module-widget.label_dock_widget">widget.label_dock_widget module</a></li>
+<li><a class="reference internal" href="#module-widget">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/widget.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">labelall 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">widget package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, jun.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
+    </div>
+  </body>
+</html>
