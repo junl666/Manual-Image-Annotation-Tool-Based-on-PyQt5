@@ -108,8 +108,6 @@ class FileDockWidget(QDockWidget):
             self.table.removeRow(self.del_num)
             del self.filepath_list[self.del_num]
 
-    #         self.signal_del_file.emit('1')
-    #
     signal_file = QtCore.pyqtSignal(str)
     signal_save = QtCore.pyqtSignal(str)
 
@@ -178,6 +176,7 @@ class SaveWindow(QWidget):
     该类用于创建切换图片时的保存选项窗口
 
     """
+
     def __init__(self):
         super().__init__()
         self.setGeometry(850, 750, 660, 220)
