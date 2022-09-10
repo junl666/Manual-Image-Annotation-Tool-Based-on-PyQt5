@@ -69,7 +69,6 @@ class LabelDialog(QWidget):
         """
         self.line_edit_groupid.setFocus()
 
-
     def auto1(self):
         """
         选择已有标签名给当前标签命名
